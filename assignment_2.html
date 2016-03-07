@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Workspace</title>
+		<style type="text/css">
+		.disable
+		{
+			display:none;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="page_container"> 
+			<table>
+				<thead>
+					<tr>
+						<th>header</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd_row">
+						<td>Row 1</td>
+					</tr>
+					<tr class="even_row">
+						<td>Row 2</td>
+					</tr>
+					<tr class="odd_row">
+						<td>Row 3</td>
+					</tr>
+					<tr class="even_row">
+						<td>Row 4</td>
+					</tr>
+					<tr class="odd_row">
+						<td>Row 5</td>
+					</tr>
+					<tr class="even_row">
+						<td>Row 6</td>
+					</tr>
+					<tr class="odd_row">
+						<td>Row 7</td>
+					</tr>
+					<tr class="even_row">
+						<td>Row 8</td>
+					</tr>
+					<tr class="odd_row">
+						<td>Row 9</td>
+					</tr>
+					<tr class="even_row">
+						<td>Row 10</td>
+					</tr>
+				</tbody>
+			</table>
+			<button id="btn">Hide Odd Rows</button>
+		</div>
+
+		<script>
+			document.getElementById("btn").addEventListener("click", hideRows);
+
+			function hideRows()
+			{
+				var result = document.getElementsByClassName("odd_row");
+				for(var i in result)
+				{
+					result[i].style.display = "none";
+				}
+				
+			}
+		</script>
+
+			
+
+	
+	</body>
+</html>
